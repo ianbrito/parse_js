@@ -1,7 +1,6 @@
-var fs = require("fs");
-var jison = require("jison");
+const Parser = require("jison").Parser;
+const grammar = require("./grammar");
 
-var bnf = fs.readFileSync("grammar.jison", "utf8");
-var parser = new jison.Parser(bnf);
-
+const parser = new Parser(grammar);
+// console.log(parser.generate());
 module.exports = parser;
