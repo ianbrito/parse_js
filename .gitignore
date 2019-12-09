@@ -2,3 +2,4 @@ node_modules/**
 testes/
 testebison/
 yarn.lock
+output/
